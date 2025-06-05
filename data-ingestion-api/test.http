@@ -1,0 +1,20 @@
+### Ingest Request
+POST http://localhost:5000/ingest
+Content-Type: application/json
+
+{
+  "ids": [1,2,3,4,5],
+  "priority": "MEDIUM"
+}
+
+### Ingest High Priority
+POST http://localhost:5000/ingest
+Content-Type: application/json
+
+{
+  "ids": [6,7,8,9],
+  "priority": "HIGH"
+}
+
+### Status Request
+GET http://localhost:5000/status/<replace-with-ingestion-id>
